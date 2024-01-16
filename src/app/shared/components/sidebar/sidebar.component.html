@@ -1,41 +1,59 @@
-<h2>Países</h2>
-<hr>
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href="#" class="brand-link" routerLink="" >
+    <i class="fas fa-flag-usa"></i>
+    <span class="brand-text font-weight-light ml-2">Países</span>
+  </a>
 
-<ul class="list-group">
-  <li routerLink=""
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-    class="list-group-item">
-    Home Page
-  </li>
-  <li
-    routerLink="about"
-    routerLinkActive="active"
-    class="list-group-item">
-    About Page
-  </li>
-  <li
-    routerLink="contact"
-    routerLinkActive="active"
-    class="list-group-item">
-    Contact Page
-  </li>
-  <li
-    routerLink="countries/by-capital"
-    routerLinkActive="active"
-    class="list-group-item">
-    Por capital
-  </li>
-  <li
-    routerLink="countries/by-country"
-    routerLinkActive="active"
-    class="list-group-item">
-    Por país
-  </li>
-  <li
-    routerLink="countries/by-region"
-    routerLinkActive="active"
-    class="list-group-item">
-    Por región
-  </li>
-</ul>
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          >
+          <a
+            href="#" class="nav-link"
+            routerLink="countries/by-capital"
+            routerLinkActive="active">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Por capital
+            </p>
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active">
+          <a
+            href="#" class="nav-link"
+            routerLink="countries/by-country"
+            routerLinkActive="active">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Por país
+            </p>
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active">
+          <a
+            href="#" class="nav-link"
+            routerLink="countries/by-region"
+            routerLinkActive="active">
+            <i class="far fa-circle nav-icon"></i>
+            <p>
+              Por región
+            </p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

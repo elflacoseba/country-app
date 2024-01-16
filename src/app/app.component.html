@@ -1,8 +1,30 @@
-<div class="row mt-4">
-  <div class="col-3">
-    <shared-sidebar></shared-sidebar>
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <shared-navbar></shared-navbar>
+
+  <!-- Main Sidebar Container -->
+  <shared-sidebar></shared-sidebar>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <shared-page-header></shared-page-header>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+
+        <router-outlet></router-outlet>
+
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
   </div>
-  <div class="col">
-    <router-outlet></router-outlet>
-  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <shared-footer></shared-footer>
+
 </div>
