@@ -4,12 +4,12 @@
   <shared-navbar></shared-navbar>
 
   <!-- Main Sidebar Container -->
-  <shared-sidebar></shared-sidebar>
+  <shared-sidebar (pageTitle)="recibirPageTitle($any($event))"></shared-sidebar>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <shared-page-header></shared-page-header>
+    <shared-page-header [pageTitle]="myPageTitle" ></shared-page-header>
     <!-- /.content-header -->
 
     <!-- Main content -->

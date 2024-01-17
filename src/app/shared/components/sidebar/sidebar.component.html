@@ -18,7 +18,8 @@
           <a
             href="#" class="nav-link"
             routerLink="countries/by-capital"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="emitirPageTitle('Buscar por Capital')">
             <i class="far fa-circle nav-icon"></i>
             <p>
               Por capital
@@ -31,7 +32,8 @@
           <a
             href="#" class="nav-link"
             routerLink="countries/by-country"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="emitirPageTitle('Buscar por País')">
             <i class="far fa-circle nav-icon"></i>
             <p>
               Por país
@@ -44,7 +46,8 @@
           <a
             href="#" class="nav-link"
             routerLink="countries/by-region"
-            routerLinkActive="active">
+            routerLinkActive="active"
+            (click)="emitirPageTitle('Buscar por Región')">
             <i class="far fa-circle nav-icon"></i>
             <p>
               Por región

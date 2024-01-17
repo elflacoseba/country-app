@@ -9,8 +9,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-
-
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +20,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     PageHeaderComponent,
     SidebarComponent,
+    SearchBoxComponent
 
   ],
   imports: [
@@ -35,6 +35,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     PageHeaderComponent,
     SidebarComponent,
+    SearchBoxComponent
   ]
 })
 export class SharedModule { }

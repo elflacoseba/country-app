@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  myPageTitle: string = '';
   title = 'countryApp';
+
+  recibirPageTitle( pageTitle:string ):void
+  {
+    this.myPageTitle = pageTitle;
+  }
 }
