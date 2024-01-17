@@ -1,6 +1,13 @@
-<input
-  type="text"
-  [placeholder]="placeholder"
-  class="form-control"
-  (keyup.enter)="emitValue( txtInput.value )"
-  #txtInput>
+<div class="input-group input-group-lg">
+  <input
+    type="search" class="form-control form-control-lg"
+    [placeholder]="placeholder"
+    (keyup.enter)="emitValue( txtInput.value )"
+    #txtInput>
+    <div class="input-group-append">
+      <button type="button" class="btn btn-lg btn-default" title="Buscar"
+        (click)="emitValue( txtInput.value )">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+</div>
