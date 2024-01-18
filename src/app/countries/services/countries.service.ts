@@ -9,6 +9,7 @@ import { Country } from '../interfaces/country';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CountriesService {
 
   private apiUrl: string = 'https://restcountries.com/v3.1';
@@ -19,7 +20,7 @@ export class CountriesService {
     return this.http.get<Country[]>( url )
       .pipe(
         catchError( error => of([]) ),
-        delay( 2000 )
+        delay( 750 )
        );
   }
 

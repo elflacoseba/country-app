@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     NavbarComponent,
     PageHeaderComponent,
     SidebarComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    LoadingSpinnerComponent
 
   ],
   imports: [
@@ -35,7 +37,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     NavbarComponent,
     PageHeaderComponent,
     SidebarComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    LoadingSpinnerComponent
   ]
 })
 export class SharedModule { }
