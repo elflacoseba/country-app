@@ -8,7 +8,7 @@
     <thead>
       <tr>
         <th style="width: 40px;">#</th>
-        <th style="width: 100px;">Bandera</th>
+        <th class="text-center" style="width: 100px;">Bandera</th>
         <th>Nombre</th>
         <th>Capital</th>
         <th style="width: 100px;">Población</th>
@@ -18,7 +18,7 @@
     <tbody>
       <tr *ngFor="let country of countries; let i = index">
         <td>{{ i + 1 }}</td>
-        <td><img [src]="country.flags.svg" [alt]="country.name.common" height="30"></td>
+        <td class="text-center"><img [src]="country.flags.svg" [alt]="country.name.common" height="30"></td>
         <td>{{ country.name.common }}</td>
         <td>{{ country.capital }}</td>
         <td class="text-right" >{{ country.population | number }}</td>
