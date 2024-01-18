@@ -1,7 +1,9 @@
+<!-- (keyup.enter)="emitValue( txtInput.value )" -->
 <div class="input-group input-group-lg">
   <input
     type="search" class="form-control form-control-lg"
     [placeholder]="placeholder"
+    (keyup)="onKeyPress( txtInput.value )"
     (keyup.enter)="emitValue( txtInput.value )"
     #txtInput>
     <div class="input-group-append">
